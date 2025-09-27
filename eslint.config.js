@@ -5,6 +5,7 @@ const expoConfig = require('eslint-config-expo/flat');
 module.exports = defineConfig([
   expoConfig,
   {
-    ignores: ['dist/*'],
+		assets: ['./assets/fonts'], // Rodar o comando react npx react-native link
+		  ignores: ['dist/*'],
   },
 ]);
