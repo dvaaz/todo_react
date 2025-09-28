@@ -1,5 +1,4 @@
-import {View, Text, TextInput, Pressable} from "react-native";
-import {StyleSheet} from "react-native";
+import { Pressable, StyleSheet, Text, TextInput, View } from "react-native";
 
 export default function Index(){
 return(
@@ -7,9 +6,10 @@ return(
     <View style={styles.box}>
     <Text style={styles.title}>To Do REACT</Text>
 		    <TextInput style={styles.form}></TextInput>
+            <Pressable
+            // funcao para adicionar tasks ou chamamos a função?
+            />
     </View>
-		    <Pressable>Enviar</Pressable>
-
 </View>);
 }
 
@@ -40,6 +40,8 @@ const styles = StyleSheet.create({
     form:{
         backgroundColor:'#FEFEFE',
         padding:8,
+        color: '#180303ff',
+        borderColor:'#f80909ff'
 
     }
 })
